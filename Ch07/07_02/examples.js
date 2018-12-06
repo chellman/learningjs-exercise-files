@@ -3,18 +3,18 @@
  */
 
 // With one, it's simple enough
-$.get("https://httpbin.org/get?data=1", function(response) {
+jQuery.get("https://httpbin.org/get?data=1", function(response) {
   // Now I have some data
 });
 
 // Callbacks get nested ad infinitum
-$.get("https://httpbin.org/get", function(response) {
+jQuery.get("https://httpbin.org/get", function(response) {
   // Now I have some data
 
-  $.get("https://httpbin.org/get", function(response) {
+  jQuery.get("https://httpbin.org/get", function(response) {
     // Now I have some more data
 
-    $.get("https://httpbin.org/get", function(response) {
+    jQuery.get("https://httpbin.org/get", function(response) {
       // Now I have even more data!
     });
   });

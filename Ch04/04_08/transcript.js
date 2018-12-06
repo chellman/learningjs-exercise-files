@@ -30,3 +30,5 @@ thing === null;
 
 // More info:
 // https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/typeof
+
+// https://lodash.com/docs/#isNumber
