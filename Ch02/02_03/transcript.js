@@ -12,8 +12,8 @@ NaN
 var myNumber = 33;
 
 Math;
-Math.round(12.92309820948209384);
 Math.round(12.4984012840918);
+Math.round(12.92309820948209384);
 
 Math.random();
 Math.random();
