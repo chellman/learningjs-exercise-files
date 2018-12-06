@@ -8,6 +8,9 @@
 20 % 2;
 19 % 2;
 
+// twenty an even number?
+20 % 2 === 0; // true
+
 var counter = 0;
 counter = counter + 1;
 counter;
