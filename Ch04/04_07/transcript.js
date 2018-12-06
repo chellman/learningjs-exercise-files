@@ -1,32 +1,16 @@
-var thing = 12;
-thing = "twelve";
-typeof thing;
+var animal = "cat";
+// animal = 'dog';
 
-thing = 12;
-typeof thing;
+animal === "cat"
+  ? console.log("You will be a cat herder.")
+  : console.log("You will be a dog catcher.");
 
-thing = false;
-typeof thing;
-
-thing = {};
-typeof thing;
-
-thing = [];
-typeof thing;
-typeof thing === "object" && thing.hasOwnProperty("length"); // true
-
-thing = {};
-typeof thing === "object" && thing.hasOwnProperty("length"); // false
-
-NaN;
-typeof NaN;
-Number.isNaN();
-
-typeof null;
-thing === null;
-thing = null;
-thing;
-thing === null;
+var job = animal === "cat" ? "cat herder" : "dog catcher";
 
 // More info:
-// https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/typeof
+// https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#if...else_Statement
+//
+// Truthy and falsy values are discussed here:
+// https://developer.mozilla.org/en-US/docs/Glossary/Truthy
+//
+// https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/Conditional_Operator
