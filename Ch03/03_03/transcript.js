@@ -1,4 +1,4 @@
-var animal = {
+var bird = {
 	genus : 'corvus',
 	species : 'corvax',
 	commonName: 'raven',
@@ -8,32 +8,24 @@ var animal = {
 	noisy : true,
 	deadly : false
 };
-animal;
 
-var animal2 = animal;
-animal2;
+bird.quote;
 
-animal2.genus = 'ursus';
-animal2;
-animal;
+bird."quote"; // this does not work
 
-animal2 = {
-	genus : 'corvus',
-	species : 'corvax',
-	commonName: 'raven',
-	callType : 'squawky', // there is a deliberate bug here in the course, removed for your convenience :)
-	quote : 'Nevermore',
-	maxOffspring : 5,
-	noisy : true,
-	deadly : false
-};
+bird["quote"];
 
-// bonus: make a copy of an object safely
-animal2 = JSON.parse(JSON.stringify(animal));
+bird.color = "black";
 
-animal2.genus = 'ursus';
-animal2;
-animal;
+bird;
+
+bird["where it lives"] = "in a tree";
+bird.whereItLives = "in a tree";
+bird.whereItLives;
+bird['whereItLives'];
+
+delete bird.color;
+bird;
 
 // More info:
 // https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects

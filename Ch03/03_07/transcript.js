@@ -1,14 +1,18 @@
-// another after the slashes does not execute
+var year=2012,month='October',day=31,holiday='Halloween';
+
+var year   = 2012,       month    =    'October', day =          31,          holiday='Halloween';
+
 var year = 2012,
-	month = 'October', // this is the month
+	month = 'October',
 	day = 31,
 	holiday = 'Halloween';
+	
+var year    = 2012,
+	month   = 'October',
+	day     = 31,
+	holiday = 'Halloween';
 
-/*
-You can write comments
-across multiple lines
-finally ending with:
-*/
+var tinyAlmanac={'year':2012,'month':'October','day':31,'holiday':'Halloween'};
 
 var tinyAlmanac = {
 	'year' : 2012,
@@ -17,5 +21,12 @@ var tinyAlmanac = {
 	'holiday' : 'Halloween'
 };
 
+var longString = "Four score \
+and seven years ago \
+our fathers brought forth \
+on this continent \
+a new nation";
+
 // More info: 
-// https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#Comments
+// These are not specifications on whitespace, but the Mozilla recommended coding style concerning whitespace.
+// https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style#Whitespace

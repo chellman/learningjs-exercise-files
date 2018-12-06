@@ -1,32 +1,33 @@
-var year=2012,month='October',day=31,holiday='Halloween';
+var counties = [
+	'Belknap',
+	'Strafford',
+	'Carroll',
+	'Rockingham'
+];
 
-var year   = 2012,       month    =    'October', day =          31,          holiday='Halloween';
+counties[0];
+counties[2];
 
-var year = 2012,
-	month = 'October',
-	day = 31,
-	holiday = 'Halloween';
-	
-var year    = 2012,
-	month   = 'October',
-	day     = 31,
-	holiday = 'Halloween';
+counties[2] = 'Cheshire';
+counties;
 
-var tinyAlmanac={'year':2012,'month':'October','day':31,'holiday':'Halloween'};
+counties[4] = 'Carroll';
+counties;
 
-var tinyAlmanac = {
-	'year' : 2012,
-	'month' : 'October',
-	'day' : 31,
-	'holiday' : 'Halloween'
-};
+counties[counties.length] = 'Merrimack';
+counties;
 
-var longString = "Four score \
-and seven years ago \
-our fathers brought forth \
-on this continent \
-a new nation";
+counties.push('Coos');
+counties;
 
-// More info: 
-// These are not specifications on whitespace, but the Mozilla recommended coding style concerning whitespace.
-// https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style#Whitespace
+counties.pop();
+
+delete counties[2];
+counties;
+
+counties.splice(2, 1);
+counties;
+counties.length;
+
+// More info:
+// https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array

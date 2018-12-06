@@ -1,33 +1,40 @@
-var myArray = [];
-myArray;
+var animal = {
+	genus : 'corvus',
+	species : 'corvax',
+	commonName: 'raven',
+	callType : 'squawky',
+	quote : 'Nevermore',
+	maxOffspring : 5,
+	noisy : true,
+	deadly : false
+};
+animal;
 
-var daysOfTheWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday'];
-daysOfTheWeek;
+var animal2 = animal;
+animal2;
 
-var myArray = [
-0, 1, 2,
-'string1', 'string2', 'string3',
-true, false
-];
-myArray;
+animal2.genus = 'ursus';
+animal2;
+animal;
 
-var counties = [
-	'Belknap',
-	'Strafford',
-	'Carroll',
-	'Rockingham'
-];
-counties;
+animal2 = {
+	genus : 'corvus',
+	species : 'corvax',
+	commonName: 'raven',
+	callType : 'squawky', // there is a deliberate bug here in the course, removed for your convenience :)
+	quote : 'Nevermore',
+	maxOffspring : 5,
+	noisy : true,
+	deadly : false
+};
 
-var arrayOfStuff = [
-	{'name' : 'value'},
-	[1, 2, 3],
-	true,
-	'nifty'
-];
-arrayOfStuff;
-arrayOfStuff.length;
+// bonus: make a copy of an object safely
+animal2 = JSON.parse(JSON.stringify(animal));
+
+animal2.genus = 'ursus';
+animal2;
+animal;
 
 // More info:
-// https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values%2C_variables%2C_and_literals#Array_literals
-// https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array
+// https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Working_with_Objects
+// https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Object

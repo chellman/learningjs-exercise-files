@@ -1,27 +1,24 @@
-var string1 = 'This is the longest string ever.';
-var string2 = 'This is the shortest string ever.';
-var string3 = 'Is this the thing called Mount Everest?';
-var string4 = 'This is the Sherman on the Mount.';
+// another after the slashes does not execute
+var year = 2012,
+  month = "October", // this is the month
+  day = 31,
+  holiday = "Halloween";
 
-var regex = /this/;
+/*
+You can write comments
+across multiple lines
+finally ending with:
+*/
 
-console.log( regex.test(string1) );
-console.log( regex.test(string2) );
-console.log( regex.test(string3) );
-console.log( regex.test(string4) );
+var tinyAlmanac = {
+  year: 2012,
+  month: "October",
+  day: 31,
+  holiday: "Halloween"
+};
 
-regex = /this/i;
-
-regex = /^this/i;
-
-regex = /this$/i;
-
-regex = /ever.$/i;
-
-regex = /ever\.$/i;
-
-regex = /Moun.$/i;
+// watch out for block comments here
+var myRegExp = /[0-9].*/;
 
 // More info:
-// https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions
-// http://www.regular-expressions.info
+// https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Statements#Comments
