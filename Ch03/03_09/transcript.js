@@ -24,4 +24,4 @@ regex = /Moun.$/i;
 
 // More info:
 // https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions
-// http://www.regular-expressions.info
+// http://regex.info/book.html
