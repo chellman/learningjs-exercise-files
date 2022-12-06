@@ -12,7 +12,8 @@ false;
 
 buttonHasBeenClicked = false;
 
-var myLocation = "Santa Barbara", myOtherLocation = "Los Angeles";
+var myLocation = "Santa Barbara",
+  myOtherLocation = "Los Angeles";
 
 myLocation === myOtherLocation;
 
