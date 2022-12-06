@@ -19,13 +19,6 @@
 Joe's Favorite \
 String EVER";
 
-var myString = "This is my string. Leave it alone";
-myString;
-myString.length;
-myString.toUpperCase();
-
-"This is my string".length;
-
 // More info:
 // https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals
 // https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String
