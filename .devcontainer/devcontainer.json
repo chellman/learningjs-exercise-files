@@ -3,7 +3,7 @@
 {
 	"name": "Node.js",
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:18-bullseye",
-	"extensions": ["esbenp.prettier-vscode@9.10.3"],
+	"extensions": ["esbenp.prettier-vscode@9.10.3","achil.vscode-javascript-repl@0.7.3","formulahendry.code-runner@0.11.8"],
 	"settings": {
 		"extensions.autoCheckUpdates": false,
 		"extensions.autoUpdate": false,
