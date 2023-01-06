@@ -16,9 +16,11 @@
 			"editor.formatOnSave": true
 		}
 	},
+	"waitFor": "onCreateCommand",
+	"updateContentCommand": "npm install",
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm install"
+	// "postCreateCommand": "npm install"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
