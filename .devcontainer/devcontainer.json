@@ -3,7 +3,9 @@
 {
 	"name": "Node.js",
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:18-bullseye",
-	"extensions": ["esbenp.prettier-vscode@9.10.3","achil.vscode-javascript-repl@0.7.3","formulahendry.code-runner@0.11.8"],
+	"extensions": [
+		"esbenp.prettier-vscode@9.10.3"
+	],
 	"settings": {
 		"extensions.autoCheckUpdates": false,
 		"extensions.autoUpdate": false,
@@ -16,7 +18,7 @@
 	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm install prettier@2.8.0 -g -D --save-exact"
+	"postCreateCommand": "npm install"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
