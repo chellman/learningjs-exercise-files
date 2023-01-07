@@ -4,10 +4,13 @@
 	"name": "Node.js",
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:18-bullseye",
 	"extensions": [
-		"esbenp.prettier-vscode@9.10.3"
+		"esbenp.prettier-vscode@9.10.3",
+		"ms-vscode.live-server"
 	],
 	"settings": {
 		"extensions.autoCheckUpdates": false,
+		"editor.minimap.enabled": false,
+		"editor.wordWrap": "on",
 		"extensions.autoUpdate": false,
 		"editor.defaultFormatter": null,
 		"editor.formatOnSave": false,
@@ -15,6 +18,7 @@
 			"editor.defaultFormatter": "esbenp.prettier-vscode",
 			"editor.formatOnSave": true
 		}
+		
 	},
 	"waitFor": "onCreateCommand",
 	"updateContentCommand": "npm install",
